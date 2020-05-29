@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head">
+</head>
+<body>
+
+	<header th:replace="layout/layout :: header"></header>
+	
+	<h1>Employees Table</h1>
+	<table id="employeesTable" class="display">
+      
+       <!-- Header Table -->
+       <thead>
+            <tr>
+                <th>Id</th>
+				<th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Active</th>
+            </tr>
+        </thead>
+        <!-- Footer Table -->
+        <tfoot>
+            <tr>
+                <th>Id</th>
+				<th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Active</th>
+            </tr>
+        </tfoot>
+    </table>
+	
+	<footer th:replace="layout/layout :: footer"></footer>
+	
+	<script th:replace="datatablesjs :: javascript"></script>
+	
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+	<script type="text/javascript" th:fragment="javascript">
+	
+		$(document).ready( function () {
+			 var table = $('#employeesTable').DataTable({
+					"sAjaxSource": "/empleados/",
+					"sAjaxDataProp": "",
+					"order": [ 0, "asc" ],
+					"aoColumns": [
+					    { "mData": "id"},
+				      	{ "mData": "name" },
+						  { "mData": "lastName" },
+						  { "mData": "email" },
+						  { "mData": "phone" },
+						  { "mData": "active" }
+					]
+			 })
+		});
+	
+	</script>
+
+
+</body>
+</html>
