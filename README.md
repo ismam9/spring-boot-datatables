@@ -1,1 +1,1 @@
-# spring-boot-datatables
+# JQUERY-DATABLES-SPRING-JPA
